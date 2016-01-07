@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/><meta name="exporter-version" content="Evernote Mac 6.0.16 (451862)"/><meta name="altitude" content="3.394750118255615"/><meta name="author" content="eliranbi@gmail.com"/><meta name="created" content="2015-11-10 16:26:58 +0000"/><meta name="latitude" content="25.990338085934"/><meta name="longitude" content="-80.11790192426457"/><meta name="source" content="desktop.mac"/><meta name="updated" content="2015-11-10 18:48:40 +0000"/><title>Lab 11</title></head><body>
+<div>Now that we finish our custom report and events, I would like to go back and make one small change.</div>
+<div>This bring me back to StrongLoop, as we mention the MFP provide you the capability to collect analytics, force updates and etc even if you are not using adapters, lets see how we can access our REST Api (existing investment or not) directly and still leverage the platform features.</div>
+<div><br/></div>
+<div>Lets get started : </div>
+<div><br/></div>
+<div>1. First lets run the SL server, Navigate to your SL project folder and run the following command : </div>
+<div><br/></div>
+<div>     $ node .</div>
+<div><br/></div>
+<div>2. Open the browser and navigate to :  http://0.0.0.0:3000/explorer</div>
+<div><br/></div>
+<div>     <img src="Lab%2011.resources/Screen%20Shot%202015-11-10%20at%2011.56.31%20AM.png" height="436" width="1678"/>     </div>
+<div><br/></div>
+<div>3. Click on the employee -&gt; Get </div>
+<div><br/></div>
+<div>     <img src="Lab%2011.resources/Screen%20Shot%202015-11-10%20at%2011.57.39%20AM.png" height="184" width="1652"/></div>
+<div><br/></div>
+<div><br/></div>
+<div>4. Press on the “Try it out” button and make sure you get a list of employees as the results </div>
+<div><br/></div>
+<div><br/></div>
+<div>          <img src="Lab%2011.resources/Screen%20Shot%202015-11-10%20at%2011.57.45%20AM.png" height="124" width="386"/></div>
+<div><br/></div>
+<div>          <img src="Lab%2011.resources/Screen%20Shot%202015-11-10%20at%2011.58.56%20AM.png" height="928" width="1656"/></div>
+<div><br/></div>
+<div>5. If you get as a response empty list, please follow the next steps to generate some data.</div>
+<div><br/></div>
+<div>     5.1. Open the Terminal and navigate to : PROJECT_PATH/SLTechExEmployee/server</div>
+<div>     5.2  Run the following command :</div>
+<div><br/></div>
+<div>           $ node import-employees.js</div>
+<div><br/></div>
+<div>6. On your browser press again on the “Try it out” button and you should be able to see list of employees as response.</div>
+<div><br/></div>
+<div>7. Now that we have the SL API running lets open our IBMTechEXEmployee project using Brackets </div>
+<div><br/></div>
+<div>8. Open the app.js file and navigate to EmployeeService </div>
+<div><br/></div>
+<div>9. Modify the WLResourceRequest and change the url to :</div>
+<div><br/></div>
+<div>     http://0.0.0.0:3000/api/employees</div>
+<div><br/></div>
+<div>10. Modify the success call back and change the code</div>
+<div><br/></div>
+<div>     From :</div>
+<div>     </div>
+<div>               employees = response.responseJSON.employees;</div>
+<div> </div>
+<div>     To :</div>
+<div> </div>
+<div>               employees = response.responseJSON;   </div>
+<div>     </div>
+<div>Your code should look like this : </div>
+<div><br/></div>
+<div>     From : </div>
+<div><br/></div>
+<div>          <img src="Lab%2011.resources/Screen%20Shot%202015-11-10%20at%2012.14.17%20PM.png" height="934" width="1150"/></div>
+<div><br/></div>
+<div>     To :</div>
+<div><br/></div>
+<div>          <img src="Lab%2011.resources/Screen%20Shot%202015-11-10%20at%2012.22.25%20PM.png" height="932" width="1154"/></div>
+<div><br/></div>
+<div>11. Run the application using the preview or the emulator </div>
+<div><br/></div>
+<div>           $ mfp corodva preview</div>
+<div> </div>
+<div>               or</div>
+<div> </div>
+<div>           $ mfp cordova emulate                </div>
+<div><br/></div>
+<div><br/></div>
+<div>If we look at the console and the operational analytics console we can see that we were able to collect allot of metrics about the application usage even without the app using the adapters, things like : </div>
+<div><br/></div>
+<div>Network - Roundtrip time and Backend response time.</div>
+<div>Dashboard - Total sessions</div>
+<div>Devices - Operating system usage, model usage, OS version usage.</div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+<div><br/></div>
+</body></html>
