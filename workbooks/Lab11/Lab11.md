@@ -112,7 +112,7 @@ Before we test our app against our StrongLoop API, we we need to populate our ba
    
 1. Return to a terminal prompt with context within **IBMTechEXEmployee** and run the application using the preview or the emulator 
 
-        mfp corodva preview   
+        mfp cordova preview   
    or   
         mfp cordova emulate
 
