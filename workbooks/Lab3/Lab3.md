@@ -116,7 +116,7 @@ There are two options available to preview the application :
        - Simple browser rendering or 
        - Mobile Browser Simulator rendering
 
-In order to use the **mfp cordova preview** command, which provides easy preview, testing and debugging of applications using the embeded browser debugger tools plus cordova device emulation controls for things like GPS and acclelerometer you will need run with a corresponding MobileFirst backend project.  We will get to that in the next labo, so for now you will use the emulate command.
+The **mfp cordova preview** command provides easy preview, testing, and debugging of applications using the embedded browser debugger. The Mobile Browser Simulator feature also supports many Cordova device emulation controls for items such as GPS and accelerometer.  However, this requires the creation of a corresponding MobileFirst backend project.  We will get to that in the next lab, so for now you will use the emulate command.
 
 1. Use the mfp cordova emulate command which will allow you to choose between the platform you choose to add:
 android or iOS.  
@@ -124,7 +124,7 @@ android or iOS.
 
         mfp cordova emulate
 
-  Once you select the platform you can select the device.  Which devices are available to you in the list will depend on the type of host machine you are running on and which Android Virtual Devices you have installed.
+  Selecting a mobile platform allows you to then select a specific device.  The list of available devices will depend on the type of host machine you are running on and which Android Virtual Devices are installed.
   > Note: If you are running on the provided VM, you will only have the **Nexus\_5\_API\_22\_x86** device available.
 
   <img src="images/Lab3-05-device-list2.png" width="600"/>
