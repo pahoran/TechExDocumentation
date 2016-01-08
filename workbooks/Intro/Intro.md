@@ -2,7 +2,7 @@
 # Introduction
 
 
-In this set of labs we will demonstrate how to take an existing Ionic/Corodva application and import it into a MobileFirst Platform application, then demonstrate some of the capabilities provided by MobileFirst.  We will cover bootstrapping, using adapters
+In this set of labs we will demonstrate how to take an existing Ionic/Cordova application and import it into a MobileFirst Platform application, then demonstrate some of the capabilities provided by MobileFirst.  We will cover bootstrapping, using MFP adapters, and MFP Operational Analytics.
 
 The activity will start with an Ionic project that we have already created (see git repo below).  The application is an Employee Directory application, named IBMTechEXEmployee.
 
@@ -46,7 +46,7 @@ In this lab we will use the following tools :
 
 1. The MFP Command Line Interface (CLI) to interact with the MobileFirst Plaform, create projects, create adapters, deploy to the mfp server, view our mfp console etc.
 2. Your choice of IDE to edit the code.  The Brackets IDE was used throughout these labs and can be downloaded from here :  <http://brackets.io>.  Brackets is a modern, open source text editor that understands web design.
-You can also use the Brackets Extension manager to install additional plugins for code assistant and live preview , the one that I’m using in this tutorial is :
+You can also use the Brackets Extension manager to install additional plugins for code assistant and live preview. The extensions that are used in this tutorial are:
 
      - ionic-brackets.
      - Ionic Framework Code Hinting.
