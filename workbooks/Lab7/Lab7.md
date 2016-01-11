@@ -26,7 +26,7 @@ From the MobileFirst Operations Console, Click on the ‘Analytics Console’ li
 
 When prompted for the user id and password, use the default of admin/admin
 
-### Review the Analtyics Console
+### Review the Analytics Console
 
 If you have run the prior exercises, you should see that there is a substantial amount of information provided out-of-the-box on the various tabs and views, without any special effort on your part.  
 

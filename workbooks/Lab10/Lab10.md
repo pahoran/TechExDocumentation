@@ -90,11 +90,13 @@ Now lets start the StrongLoop Arc tool.
 
   Add each of these properties as described in the section and screenshot below:
 
-     _id
-     first_name
-     last_name
-     img
-     job_title
+  | **Name**   | **Type** | **ID** | **Required** | **Index** |
+  |------------|:--------:|:------:|:------------:|:---------:|
+  | _id        |  number  |    Y   |       N      |     Y     |
+  | first_name |  string  |    N   |       N      |     Y     |
+  | last_name  |  string  |    N   |       N      |     Y     |
+  | img        |  string  |    N   |       N      |     N     |
+  | job_title  |  string  |    N   |       N      |     N     |
 
   <img src="images/Lab10-09-properties-2.png" width="750"/>
 
