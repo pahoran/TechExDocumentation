@@ -49,10 +49,10 @@ The EmployeeService service in app.js returns the list of employees to the contr
 
    ```
   
-  **Screenshot Before:**  
-  <img src="images/Lab6-01-dollar-http.png" width="650"/>
+    **Screenshot Before:**  
+    <img src="images/Lab6-01-dollar-http.png" width="650"/>
 
-  **Screenshot After:**
+    **Screenshot After:**
     <img src="images/Lab6-02-WLResourceRequest.png" width="650"/>
 
 4. **Save** your updates!
