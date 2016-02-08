@@ -6,7 +6,7 @@ In this set of labs we will demonstrate how to take an existing Ionic/Cordova ap
 
 The activity will start with an Ionic project that we have already created (see git repo below).  The application is an Employee Directory application, named IBMTechEXEmployee.
 
-The following exercise includes 9 micro labs (~15 min each)
+The following exercise includes 12 micro labs (~15 min each)
 
 - Lab # 1 - Creating Cordova hybrid base application with MFP CLI
 - Lab # 2 - Import your existing Ionic/Angular code to MFP App
@@ -17,6 +17,9 @@ The following exercise includes 9 micro labs (~15 min each)
 - Lab # 7 - Overview MFP Operational Analytics
 - Lab # 8 - How to capture custom events
 - Lab # 9 - How to create custom charts
+- Lab #10 - Creating a StrongLoop API
+- Lab #11 - Calling a StrongLoop API from MFP App
+- Lab #12 - Adding Mobile Quality Assurance (MQA) features to MFP App
 
 ### Source code for labs
 
